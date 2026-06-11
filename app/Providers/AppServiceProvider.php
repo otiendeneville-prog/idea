@@ -21,7 +21,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Model::ungurd();
+        Model::unguard();
         Model::shouldBeStrict();
         User::where(...);
         Model::AutomaticallyEgerLoadRelationship();
