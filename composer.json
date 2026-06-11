@@ -45,6 +45,7 @@
             "npm run build"
         ],
         "format":[
+            "vendor\bin\rec",
             "vendor/bin/pint"
         ],
         "dev": [
