@@ -9,4 +9,8 @@ class idea extends Model
 {
     /** @use HasFactory<\Database\Factories\IdeaFactory> */
     use HasFactory;
+    protected $casts = [
+       'links'=>AsArrayObjecct::class,
+       'status'=>
+    ]
 }
