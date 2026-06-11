@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\User;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -22,6 +23,7 @@ class AppServiceProvider extends ServiceProvider
     {
         Model::ungurd();
         Model::shouldBeStrict();
+        User::where(...);
         Model::AutomaticallyEgerLoadRelationship();
     }
 }
