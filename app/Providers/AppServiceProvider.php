@@ -23,7 +23,6 @@ class AppServiceProvider extends ServiceProvider
     {
         Model::unguard();
         Model::shouldBeStrict();
-        User::where(...);
-        Model::AutomaticallyEgerLoadRelationship();
+        Model::automaticallyEagerLoadRelationships(); 
     }
 }
