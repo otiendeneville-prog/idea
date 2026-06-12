@@ -20,4 +20,8 @@ class idea extends Model
     {
       return $this->belongsTo(User::class);
     }
+    public function steps(): BelongsTo
+    {
+    //   return $this->hasMany(Step::class);
+    }
 }
